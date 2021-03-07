@@ -229,6 +229,10 @@ table {
   color: black;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 550px) {
   #heading #title {
     font-size: 1.2rem;
