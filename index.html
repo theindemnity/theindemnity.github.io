@@ -1,1 +1,69 @@
-Hello World.
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="d3.tip.js"></script>
+</head>
+
+<body>
+    <header id="heading">
+        <h2 id="title">The Indemnity: how much China owes the world</h2>
+        <h3 id="description">Calculed based on lives lost, people infected, jobs lost and economic damage during COVID-19 pandemic.</h3>
+        <hr />
+    </header>
+
+    <div id="chart-container">
+        <div id="preloader">
+            Loading data. Please wait.
+        </div>
+        <svg id="chart"></svg>
+        <p class="source">Covid-19 Statistics Source: <a target="_blank" rel="noopener"
+                href="https://covid19.who.int/">World Health Organization</a></p>
+    </div>
+
+    <div class="separator">
+        <hr />
+    </div>
+
+    <div class="support-us">
+        <div>
+            <b>Support us in keeping this website. Donate anonymously with Bitcoin:</b><br>
+             <br>
+            <a href="#">1P8EzVP39gNVxKwhJDtPmHmV5tKZNN4RUZ</a>
+            <p>
+                <img src="https://www.bitcoinqrcodemaker.com/api/?style=bitcoin&amp;address=1P8EzVP39gNVxKwhJDtPmHmV5tKZNN4RUZ" alt="Bitcoin QR Code Generator" height="200" width="200" border="0" />
+            </p>
+        </div>
+    </div>
+
+    <div class="separator">
+        <hr />
+    </div>
+
+    <div class="flex">
+        <div class="md-60">
+            <div class="countries-list">Total Indemnity | Global & by Country</div>
+
+            <table id="countries_table">
+                <tr>
+                    <th class="table-th-country">Country</th>
+                    <th>Deaths</th>
+                    <th>Infections</th>
+                    <th>Indemnity (billions of USD)</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <div>
+            <a class="twitter-timeline" href="https://twitter.com/">Tweets by The Indemnity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+    </div>
+
+    
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
